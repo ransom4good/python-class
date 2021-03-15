@@ -6,6 +6,17 @@
 # check if the two password fields match, if it does, Change the password to a new one
 # and display success message. 
 
+
+
+# Assignment 2
+#1. Create a function that gives you the sum of numbers in a list. Do not use the Pythin inbuilt function
+#2. Create a function that returns the multiplication table of any number passed to it
+#3. Use Lambda and list comprehension to create a function that can add numbers from lower limit to an upper limit. 
+#   call this function three times with different values.  
+
+
+
+
 user_email = input('Enter Email: ')
 user_pass = input('Enter Password: ')
 confirm_pass = input('Confirm Password: ')
@@ -22,34 +33,40 @@ print(user_login)
 
 
 
-# # Python program to print Even Numbers in given range 
-# start, end = 0, 21
-# # iterating each number in list 
-# for even in range(start, end + 1):
-# 	# checking condition 
-# 	if even % 2 == 0: 
-# 		print(num, end = " ") 
+# # # Python program to print Even Numbers in given range 
+# # start, end = 0, 21
+# # # iterating each number in list 
+# # for even in range(start, end + 1):
+# # 	# checking condition 
+# # 	if even % 2 == 0: 
+# # 		print(num, end = " ") 
 
 
-# for x in range(0, 22, 2):
-#     print(x)
-# else:
-#     print("All Even Numbers")
+for x in range(0, 22, 2):
+    print(x)
+else:
+    print("All Even Numbers")
 
 
 # score = int(input('Enter Score: '))
 # if score >=0 and score <=34:
-#     print(F'Your score is {score} and you failed')
+#     grade = 'Fail'
+#     print(F'Your score is {score} and this is a {grade}')
 # elif score >=35 and score <=44:
-#     print(F'Your score is {score} and this is a pass')
+#     grade = 'Pass'
+#     print(F'Your score is {score} and this is a {grade}')
 # elif score >=45 and score <=49:
-#     print(F'Your score is {score} and this is fair')
+#     grade = 'Fair'
+#     print(F'Your score is {score} and this is {grade}')
 # elif score >=50 and score <=59:
-#     print(F'Your score is {score} and this is good')
+#     grade = 'Good'
+#     print(F'Your score is {score} and this is {grade}')
 # elif score >=60 and score <=69:
-#     print(F'Your score is {score} and this is very good')
+#     grade = 'Very Good'
+#     print(F'Your score is {score} and this is {grade}')
 # elif score >=70 and score <=100:
-#     print(F'Your score is {score} and this is excellent')
+#     grade = 'Excellent'
+#     print(F'Your score is {score} and this is {grade}')
 # else:
 #     print(F'You have entered an invalid score number')
 
@@ -68,3 +85,24 @@ print(user_login)
 #     print("The smallest of the 3 number is: ", smallest_num)
 # smallest(number1, number2, number3)
 
+
+# Multiplication Table
+num = 3
+x = 1
+while x <= 12:
+    result = num * x
+    print(F'{num} X {x} = {result}')
+    x += 1
+
+
+
+# Sum the numbers in the list
+numbers = [10, 20, 30, 40, 70, 200, 300]
+total = 0
+x = 0
+
+while x < len(numbers):
+    total += numbers[x]
+    x += 1
+print('Total', total)
+print('Average', total/len(numbers))
