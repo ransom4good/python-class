@@ -15,21 +15,43 @@
 #   call this function three times with different values.  
 
 
+# Assignment 3
+# 1. Create a Class called Product
+#  determine what will be the class variable for the product class and create an init method with three parameters
+#  for the product class, create another method that will calculate the discount prize for each product.
+#  call it three times
+
+# 2. Create a child class called shirt
+# add new parameter that will be a list of sizes in the init method of the child class. 
+# create a demethod that display information about this shirt class.
+# access the attributes on the child class
+
+multiply_number = int(input('Enter a number to print its multiplication table: '))
+
+def print_table(num):
+    for i in range(1, 13):
+        result = num * i
+        print(F'{num} X {i} = {result}')
+print_table(multiply_number)
 
 
-user_email = input('Enter Email: ')
-user_pass = input('Enter Password: ')
-confirm_pass = input('Confirm Password: ')
-user_login = ['ransom2sure@gmail.com', 'password']
 
-if user_email != user_login[0]:
-    print('Email not found')
-elif user_pass != confirm_pass:
-    print('Password does not match')
-else:
-    user_login[1] = user_pass
-    print('Password changed successfully')
-print(user_login)
+
+
+
+# user_email = input('Enter Email: ')
+# user_pass = input('Enter Password: ')
+# confirm_pass = input('Confirm Password: ')
+# user_login = ['ransom2sure@gmail.com', 'password']
+
+# if user_email != user_login[0]:
+#     print('Email not found')
+# elif user_pass != confirm_pass:
+#     print('Password does not match')
+# else:
+#     user_login[1] = user_pass
+#     print('Password changed successfully')
+# print(user_login)
 
 
 
@@ -42,10 +64,10 @@ print(user_login)
 # # 		print(num, end = " ") 
 
 
-for x in range(0, 22, 2):
-    print(x)
-else:
-    print("All Even Numbers")
+# for x in range(0, 22, 2):
+#     print(x)
+# else:
+#     print("All Even Numbers")
 
 
 # score = int(input('Enter Score: '))
@@ -87,22 +109,22 @@ else:
 
 
 # Multiplication Table
-num = 3
-x = 1
-while x <= 12:
-    result = num * x
-    print(F'{num} X {x} = {result}')
-    x += 1
+# num = 3
+# x = 1
+# while x <= 12:
+#     result = num * x
+#     print(F'{num} X {x} = {result}')
+#     x += 1
 
 
 
 # Sum the numbers in the list
-numbers = [10, 20, 30, 40, 70, 200, 300]
-total = 0
-x = 0
+# numbers = [10, 20, 30, 40, 70, 200, 300]
+# total = 0
+# x = 0
 
-while x < len(numbers):
-    total += numbers[x]
-    x += 1
-print('Total', total)
-print('Average', total/len(numbers))
+# while x < len(numbers):
+#     total += numbers[x]
+#     x += 1
+# print('Total', total)
+# print('Average', total/len(numbers))
